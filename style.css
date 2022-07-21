@@ -1,0 +1,139 @@
+/* Hope Johns */
+body
+{
+  font-family: "Cabin", Wingdings, sans-serif;
+  background-color: lightgreen;
+}
+
+.title
+{
+  color: rgb(1, 50, 32);
+  text-align: center;
+  text-shadow: 2px 2px green;
+  font-size: 30px;
+}
+
+.navbar ul
+{
+  margin: 30px;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-gap: 30px;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.jar
+{
+  padding: 30px;
+  margin: 30px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'showcases showcases'
+    'showcases showcases'
+    'showcases showcases';
+}
+
+.titlemain
+{
+  font-size: 30px;
+  font-style: italic;
+  grid-area: showcases;
+  background: url("images/littleboat.jpg");
+  min-height: 800px;
+  background-size: cover;
+  padding: 10px;
+  box-shadow: 0 15px 15px rgb(1, 50, 32);
+}
+
+.footer
+{
+  display: block;
+}
+
+.gallery
+{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'img1 img2 img3';
+}
+
+.pic1
+{
+  grid-area: img1;
+  box-shadow: 0 15px 15px rgb(1, 50, 32);
+}
+
+.pic2
+{
+  grid-area: img2;
+  box-shadow: 0 15px 15px rgb(1, 50, 32);
+}
+
+.pic3
+{
+  grid-area: img3;
+  box-shadow: 0 15px 15px rgb(1, 50, 32);
+}
+
+
+.continfo
+{
+  background-image: url("images/fishart.jpg");
+  background-size: cover;
+  text-align: left;
+  font-size: 30px;
+  color: rgb(254, 132, 132);
+  text-shadow: 2px 2px rgb(219, 0, 0);
+  box-shadow: 0 15px 15px rgb(1, 50, 32);
+}
+
+.prods
+{
+  text-align: center;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'baits1 baits2 nobaits';
+}
+
+.bait1
+{
+  grid-area: baits1;
+}
+
+.bait2
+{
+  grid-area: baits2;
+}
+
+.notbait
+{
+  grid-area: nobaits;
+}
+
+.prods ul
+{
+  list-style: none;
+}
+
+@media screen and (max-width: 800px)
+{
+  .titlemain
+  {
+    color: green;
+  }
+
+  .prods
+  {
+    display: block;
+  }
+  .gallery
+  {
+    display: none;
+  }
+}
