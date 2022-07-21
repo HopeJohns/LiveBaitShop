@@ -38,12 +38,14 @@ body
 
 .titlemain
 {
+  color: green;
   font-size: 30px;
   font-style: italic;
   grid-area: showcases;
   background: url("images/littleboat.jpg");
-  min-height: 800px;
+  min-height: 400px;
   background-size: cover;
+  background-position: center;
   padding: 10px;
   box-shadow: 0 15px 15px rgb(1, 50, 32);
 }
@@ -55,6 +57,7 @@ body
 
 .gallery
 {
+  padding-left: 200px;
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
@@ -123,11 +126,6 @@ body
 
 @media screen and (max-width: 800px)
 {
-  .titlemain
-  {
-    color: green;
-  }
-
   .prods
   {
     display: block;
